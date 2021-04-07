@@ -58,7 +58,6 @@ def personajes(request, personaje):
     portrayed = r.json()[0]["portrayed"]
     category = r.json()[0]["category"]
     r2 = requests.get('https://tarea-1-breaking-bad.herokuapp.com/api/quote?author='+str(personaje))
-    print(r2.json())
     quotes = [] 
     
     for elem in r2.json():
