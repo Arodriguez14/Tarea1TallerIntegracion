@@ -1,0 +1,28 @@
+<h1>Tarea 1 Andrés Rodríguez</h1>
+
+<form action="/listapersonajes" method="post">
+    {% csrf_token %}
+    <p>
+      Búsqueda de personajes: <input type="text" name="search" class="search" placeholder="Ingrese nombre" required> 
+      <input type="submit" value="Buscar">
+
+    </p>
+  </form>
+<div>
+    <div>
+        <h3>Breaking Bad</h3>
+        <ul name="Season Breaking Bad" >
+        {% for num in bb %}
+            <li><a href="/BreakingBad/{{ num }}">Temporada {{num}}</a></li>
+        {% endfor %}
+    </ul>
+    </div>
+    <div>
+        <h3>Better Call Saul</h3>
+        <ul name="Season Better Call Saul" ></ul>
+        {% for num in bcs %}
+            <li><a href="/BetterCallSaul/{{ num }}">Temporada {{num}}</a></li>
+        {% endfor %}
+    </div>
+
+</div>

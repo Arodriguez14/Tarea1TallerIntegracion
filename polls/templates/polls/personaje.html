@@ -1,0 +1,26 @@
+<h2>{{name}}</h2>
+<img src="{{img}}" style="height:15%; width:15%">
+<ul>
+    <li>ID: {{char_id}}</li>
+    <li>Estado: {{status}}</li>
+    <li>NickName: {{nickname}}</li>
+    <li>Portrayed: {{portrayed}}</li>
+    <li>Categoria: {{category}}</li>
+    <li>Ocupacion:</li>
+    {% for oc in occupation %}
+        <span> {{oc}}</span>
+    {% endfor %}
+    <li>Apariciones en Breaking Bad:</li>
+    {% for ap in appearance %}
+        <span> <a href="/BreakingBad/{{ ap }}">{{ap}}</a></span>
+    {% endfor %}
+    <li>Apariciones en Better Call Saul:</li>
+    {% for ap in better_call_saul_appearance %}
+        <span> <a href="/BetterCallSaul/{{ ap }}">{{ap}}</a></span>
+    {% endfor %}
+    <li>Citas:</li>
+    {% for id,quote in quotes %}
+        <span>ID de la cita: {{id}} --> {{quote}} </span>
+        <br>
+    {% endfor %}
+</ul>

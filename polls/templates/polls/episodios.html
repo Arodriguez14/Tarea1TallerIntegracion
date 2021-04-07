@@ -1,0 +1,9 @@
+<h3>Episodios de la temporada {{num_temporada}} de {{serie}}</h3>
+<div>
+    <ul>
+    {% for episodio,id in lista_de_episodios %}
+        <li><a href="/episodios/{{id}}"> {{episodio}}</a></li>
+    {% endfor %}
+</ul>
+</div>
+

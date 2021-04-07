@@ -1,0 +1,13 @@
+<h3>Los detalles del episodio son:</h3>
+<ul>
+    <li>Serie: {{series}}</li>
+    <li>Titulo: {{title}}</li>
+    <li>Episodio: {{episode}}</li>
+    <li>ID: {{episode_id}}</li>
+    <li>Temporada: {{season}}</li>
+    <li>Air-Date: {{air_date}}</li>
+    <li>Personajes:</li>
+    {% for personaje in characters %}
+        <span><a href="/{{personaje}}"> {{personaje}}</a></span>
+    {% endfor %}
+</ul>
