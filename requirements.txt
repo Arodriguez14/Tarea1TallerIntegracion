@@ -34,7 +34,9 @@ dask==0.14.3
 datashape==0.5.4
 decorator==4.0.11
 distributed==1.16.3
+dj-database-url==0.5.0
 Django==3.1.7
+django-heroku==0.3.1
 docutils==0.13.1
 entrypoints==0.2.2
 et-xmlfile==1.0.1
@@ -102,6 +104,7 @@ Pillow==4.1.1
 ply==3.10
 prompt-toolkit==1.0.14
 psutil==5.2.2
+psycopg2==2.8.6
 ptyprocess==0.5.1
 py==1.4.33
 pycosat==0.6.2
@@ -117,6 +120,7 @@ pyOpenSSL==17.0.0
 pyparsing==2.1.4
 pytest==3.0.7
 python-dateutil==2.6.0
+python-decouple==3.4
 pytz==2017.2
 PyWavelets==0.5.2
 PyYAML==3.12
@@ -153,6 +157,7 @@ traitlets==4.3.2
 unicodecsv==0.14.1
 wcwidth==0.1.7
 Werkzeug==0.12.2
+whitenoise==5.2.0
 widgetsnbextension==2.0.0
 wrapt==1.10.10
 xlrd==1.0.0
