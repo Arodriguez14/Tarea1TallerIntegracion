@@ -25,7 +25,7 @@ SECRET_KEY = 'ke-f)5_#i-&rhpz7_z8ie!b!iz_9t&n+*)#4w3=47+la6!mc(q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fathomless-cliffs-27402.herokuapp.com']
 
 
 # Application definition
