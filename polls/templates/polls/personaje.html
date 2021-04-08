@@ -6,6 +6,13 @@
 
     </p>
   </form>
+  <form action="/">
+    {% csrf_token %}
+    <p>
+      <button type="submit">Volver a pagina principal:</button>
+
+    </p>
+  </form>
 
 <h2>{{name}}</h2>
 <img src="{{img}}" style="height:15%; width:15%">
