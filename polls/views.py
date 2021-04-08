@@ -79,6 +79,7 @@ def personajes2(request):
     lista_de_personajes = []
     while True:
         r = requests.get('https://tarea-1-breaking-bad.herokuapp.com/api/characters?name='+str(searchWord)+'&limit=10&offset='+str(offset))
+        print(len(r.json()))
         if len(r.json()) == 10:
             offset += 10
             dict_personajes[contador] = r.json()
